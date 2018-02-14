@@ -20,7 +20,7 @@ def scan(procId,jobs,cmd):
                         print "[%s] start scan : %s"%(procId,ip)
 
                         fname =  "scan/%s.log"%(ip)
-                        cmd = "%s %s -o scan/%s.csv -h %s"%(niktoPath,cmd,ip,ip)
+                        cmd = "%s %s -ask no -o scan/%s.csv -h %s"%(niktoPath,cmd,ip,ip)
 
                         args = shlex.split(cmd)
                         p = subprocess.Popen(args,stdout=open(fname, 'w'))
