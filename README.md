@@ -25,3 +25,6 @@ multi threads nikto parallel scan
 >cd pyNikto  
 >chmod +x pyNiktoScan.py  
 >./pyNiktoScan.py -h  
+
+# to do
+progress bar
