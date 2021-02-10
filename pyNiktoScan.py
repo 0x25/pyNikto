@@ -42,7 +42,7 @@ def main():
                 print "Use -h to see help"
                 exit(2)
 
-        defaultNiktoCmd = '-T x6 -p 80,443'
+        defaultNiktoCmd = '-T x6 -p 80,443 -until 45m'
         defaultThread = 4
 
         description ="\033[1;31m Parallel scan with nikto. Default value : thread [%s] nikto cmd [%s] \033[0m"%(defaultThread,defaultNiktoCmd)
